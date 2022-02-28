@@ -53,7 +53,7 @@ client.on("message", async(topic, message)=> {
     //반복문을 돌며 카드주인을 찾음 => card_owner에는 사람 이름이 저장되어있음
     //맞는 사람이 없으면 DB에 저장하지 않음
     for(var i = 0; i < user.length ; i++) {
-        if(user[i].card_number == obj.card) {
+        if(user[i].card_number == obj.cardid) {
             card_owner = user[i].user_name;
         }
     }
